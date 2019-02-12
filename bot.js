@@ -2110,6 +2110,7 @@ client.on("message", message => {
      });
     }
 });
-
+.setMaxListeners(15)
+});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
